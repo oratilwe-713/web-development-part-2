@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>INDEX</title>
-    <h1><u>M FLAVOR FAST FOOD RESTAURANT</u></h1>
-    <br>
+    <title>M Flavor Fast Food Restaurant</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <header>
+        <h1>M FLAVOR FAST FOOD RESTAURANT</h1>
+    </header>
+
     <nav class="navbar">
         <ul>
             <li><a href="index.html">HOME</a></li>
-            <br>
             <li><a href="about.html">ABOUT</a></li>
-            <br>
-            <li><a href="PRODUCTS.html">MENU</a></li>
-            <br>
+            <li><a href="products.html">MENU</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
-            <br>
             <li><a href="gallery.html">GALLERY</a></li>
-    </ul>
+        </ul>
     </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Taste the Flavor of Home</h2>
+            <p>Serving the best South African fast food with love and flavor.</p>
+            <button onclick="showMenu()">Explore Our Menu</button>
+        </div>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="slideshow">
+        <img id="slide" src="images/1.jpg" alt="Delicious food" width="600">
+    </section>
+
+    <main>
+        <h2>Welcome to M Flavor!</h2>
+        <p>Your favorite local fast-food spot in Polokwane. We serve a variety of South African dishes, burgers, kotas, wings, and more. Visit us today for a taste that feels like home!</p>
+    </main>
+
     <footer>
-        <p>@copy; 2025 Restaurant Name| All rights Reserved</p>
+        <p>&copy; 2025 M Flavor Fast Food Restaurant | All Rights Reserved</p>
     </footer>
+
+    <!-- Link external JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
