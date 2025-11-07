@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>CONTACT</title>
+    <title>Contact Us - M Flavor</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="index.html">HOME</a></li>
-            <br>
             <li><a href="about.html">ABOUT</a></li>
-            <br>
-            <li><a href="PRODUCTS.html">MENU</a></li>
-            <br>
+            <li><a href="products.html">MENU</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
-            <br>
             <li><a href="gallery.html">GALLERY</a></li>
-    </ul>
-    </nav>
-    <header>
-    <h1>Contact Us<h1>
-    <nav>
-        <ul>
-            <li>Contact detail:078 812 0021/069 944 7251</li>
-            <br>
-            <li>Email=Mflavorfastfood@gmail.com</li>
         </ul>
+    </nav>
 
-        <footer>
-            <p>@copy; 2025 Restaurant Name| All rights Reserved</p>
-        </footer>s
+    <main>
+        <h1>Contact Us</h1>
+<form id="contact-form" onsubmit="validateForm(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your full name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email address">
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Type your message here..."></textarea>
+
+    <p id="error-message" style="color: red; font-weight: bold;"></p>
+    <button type="submit">Send Message</button>
+</form>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> M Flavor Fast Food Restaurant | All Rights Reserved</p>
+</footer>
+
+
+    <!-- Include EmailJS SDK and your script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
