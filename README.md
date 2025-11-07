@@ -1,5 +1,5 @@
-# web-development-part-2
-web development part 2
+# IWED POE
+IWED POE
 #changelog
 ##[1.1.0] - 2025-08-15
 ###Added
